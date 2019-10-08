@@ -1,0 +1,7 @@
+s = input()
+res = s.count('a')
+res = res + s.count('e')
+res = res + s.count('i')
+res = res + s.count('o')
+res = res + s.count('u')
+print("Número de vocales:", res)
