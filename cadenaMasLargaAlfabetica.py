@@ -14,11 +14,11 @@ newEnd = 0
 
 for i in range(len(s)):
 	if i == 0 or alf[str(s[i])] >= alf[str(s[i-1])]:
-		continue #por aqui si pasa
+		newEnd = i
 	else:
 		newEnd = i-1
 		newStart = i
-		if (newEnd - newStart) > (finalIndex - startIndex):
-			finalIndex, startIndex = newEnd, newStart
+	if (newEnd - newStart) > (finalIndex - startIndex):
+		finalIndex, startIndex = newEnd, newStart
 
-print(s[startIndex:finalIndex])
+print(s[startIndex:finalIndex + 1])
