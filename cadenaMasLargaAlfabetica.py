@@ -8,7 +8,7 @@ alf = {'0':1,'1':2,'2':3,'3':4,'4':5,'5':6,
 s = input()
 
 startIndex = 0
-finalIndex = 1
+finalIndex = 0
 newStart = 0
 newEnd = 0
 
@@ -21,4 +21,5 @@ for i in range(len(s)):
 	if (newEnd - newStart) > (finalIndex - startIndex):
 		finalIndex, startIndex = newEnd, newStart
 
-print(s[startIndex:finalIndex + 1])
+print("La subcadena más larga en orden alfabético es:",
+	s[startIndex:finalIndex + 1])
