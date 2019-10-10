@@ -14,7 +14,7 @@ newEnd = 0
 
 for i in range(len(s)):
 	if i == 0 or alf[str(s[i])] >= alf[str(s[i-1])]:
-		continue
+		continue #por aqui si pasa
 	else:
 		newEnd = i-1
 		newStart = i
