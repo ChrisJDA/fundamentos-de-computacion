@@ -4,14 +4,11 @@ alf = {'0':1,'1':2,'2':3,'3':4,'4':5,'5':6,
 'i':19,'j':20,'k':21,'l':22,'m':23,'n':24,
 'ñ':25,'o':26,'p':27,'q':28,'r':29,'s':30,
 't':31,'u':32,'v':33,'x':34,'y':35,'z':36}
-
 s = input()
-
 startIndex = 0
 finalIndex = 0
 newStart = 0
 newEnd = 0
-
 for i in range(len(s)):
 	if i == 0 or alf[str(s[i])] >= alf[str(s[i-1])]:
 		newEnd = i
@@ -20,6 +17,4 @@ for i in range(len(s)):
 		newStart = i
 	if (newEnd - newStart) > (finalIndex - startIndex):
 		finalIndex, startIndex = newEnd, newStart
-
-print("La subcadena más larga en orden alfabético es:",
-	s[startIndex:finalIndex + 1])
+print("La subcadena más larga en orden alfabético es:", s[startIndex:finalIndex + 1])
